@@ -1,0 +1,176 @@
+:root{
+    --bodyColor:linear-gradient(to bottom, rgb(0, 0, 0,1)10%, rgba(0, 0, 0, 0.0));
+    --cardColor: linear-gradient(to top, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));;
+    --navColor: linear-gradient(180deg, rgba(39, 21, 99, 0.904) 0%, rgba(0, 0, 0, 0.0) 93%);
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.2em;
+    word-break: keep-all;
+}
+
+/*All class style*/
+.card{
+    position: relative;
+    height: fit-content;
+
+    font-size: .75em;
+    box-shadow: 0 .5em 3em 0 rgb(255, 255, 255), 0 .2em 3em 0 rgb(67, 19, 122);
+    z-index: 4;
+    border-radius: .2em;
+    color: #fff;
+    background: var(--cardColor);
+    box-sizing: border-box;
+    overflow-x: auto;
+    padding: .5em 1em;
+
+    display: grid;
+    grid-template-columns: 15em 30em;
+    grid-template-rows: 1fr;
+    grid-template-areas: "info-section" " profile-section";
+}
+
+.profile-section{
+    width: 12em;
+    position: relative;
+}
+
+/* Capitalize the user's name */
+.profile-section h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.profile-section img{
+    position: relative;
+    padding: .4em .875em;
+    /* height: min-content; */
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+.info-section{
+    /* position: relative; */
+    min-width: 20em;
+    text-align: justify;
+
+}
+
+/* navigation styles */
+nav{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: fit-content;
+    background: var(--navColor);
+
+    /* overflow: hidden; */
+}
+
+.nav_ul{
+    height: inherit;
+    overflow: hidden;
+    list-style-type: none;
+}
+.nav_li{
+    padding: .3em 0;
+    position: relative;
+    float: left;
+}
+.nav_li a{
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: bold;
+    direction: ltr;
+    text-size-adjust: auto;
+    font-family: 'Times New Roman', Times, serif;
+
+    margin: 0 .2em;
+    padding: .3em;
+    display: flex;
+    /* background: #fff; */
+    color: rgba(251, 255, 255, 0.952);
+}
+
+.nav_li a:hover{
+    color: rgb(19, 9, 109);
+}
+.nav_li a:active{
+    color: rgb(117, 38, 64);
+
+}
+/*All portfolio classes styles*/
+
+
+/* For mobile device this is a responsive web*/
+@media only screen and (max-width:720px) {
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content 1fr;
+        margin: 0 10px;
+    }
+    .profile-section{
+        display: flex;
+        direction: rtl;
+        align-items: flex-end;
+        justify-self: end;
+        /* justify-content: end; */
+        position: relative;
+    }
+    .info-section{
+        text-align: justify;
+        position: relative;
+    }
+}
+
+/*All Id style*/
+
+/* Home styles */
+#container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* z-index: 1; */
+    background: var(--bodyColor);
+
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*All portfolio id's styles*/
+
+#portfolio{
+   width: 100%;
+    background: linear-gradient(180deg, rgba(77, 179, 173, 0.98) 0%, rgb(171, 171, 171) 100%);
+}
+.portfolio_container{
+    position: relative;
+    margin: auto;
+    max-width: 75em;
+    padding: 10px 20px;
+    background-color: rgba(240, 252, 255, 0.34);
+    overflow: auto;
+}
+.margins_lt{
+    margin: 30px 30px 10px 90px;
+}
+.img_container{
+    background-color: #6ed3f7;
+}
+.mobile_apps_secion,h2,h3{
+    text-transform: capitalize;
+}
+.mobile_apps_secion{
+    box-sizing: border-box;
+  width: 966px;
+  height: 380px;
+  box-shadow: 17px 10px 1px 11px rgba(0, 0, 0, 0.25);
+  background-color: #6ed3f7;
+  overflow: visible;
+  border: 1px solid #222;
+}

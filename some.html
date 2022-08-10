@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-family: sans-serif;
+    /* font-size: .75em; */
+    margin: 0;
+    line-height: 1.2em;
+    word-break: keep-all;
+}
+#container{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom left, rgb(0, 0, 0,.9), rgba(0, 0, 0, 0.0));
+}
+.card{
+    position: relative;
+    max-width: 50em;
+    max-height: 40em;
+    font-size: .75em;
+    box-shadow: 0 .5em 3em 0 rgb(255, 255, 255), 0 .2em 3em 0 rgb(219, 14, 14);
+    z-index: 4;
+    border-radius: .2em;
+    color: #fff;
+    background: rgba(15, 15, 15, 0.76);
+    box-sizing: border-box;
+    display: flex;
+    /* align-content: flex-start; */
+    /* gap: 2em; */
+    /* align-content: center;
+    justify-content: center;
+    justify-self: center; */
+    overflow-x: auto;
+    padding: .3em 1em;
+}
+.profile-section{
+    width: 12em;
+    position: relative;
+    /* min-height: 20em; */
+    /* max-width:20em; */
+}
+.profile-section h2{
+    /* position: absolute; */
+    bottom: .75px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.profile-section img{
+    position: relative;
+    padding: .4em .875em;
+    /* height: min-content; */
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+.info-section{
+    /* position: relative; */
+    min-width: 20em;
+    word-spacing: .2rem;
+}
+
+
+@media only screen and (max-width:800px) {
+    .card{
+        margin: 0 2em;
+        font-size: .75em;
+        height: fit-content;
+        width: 40em;
+        overflow: unset;
+        overflow: auto;
+        /* width: 10em; */
+        position: relative;
+    }
+    .profile-section{
+        position: relative;
+    }
+    .info-section{
+        position: relative;
+    }
+}
+</style>
+<body>
+    <div id="container">
+        <div class="card">
+            <div class="profile-section">
+                <img src="IMG_20211113_155427 (2).jpg" alt="">
+                <h2>web developer</h2>
+            </div>
+
+            <div class="info-section">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit perferendis ad exercitationem laboriosam iure similique libero repellat necessitatibus, rerum temporibus esse vero excepturi dolores consequuntur commodi veritatis iusto. Harum, repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit perferendis ad exercitationem laboriosam iure similique libero repellat necessitatibus, rerum temporibus esse vero excepturi dolores consequuntur commodi veritatis iusto. Harum, repellat?
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
