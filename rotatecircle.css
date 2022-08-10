@@ -1,0 +1,92 @@
+#container{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle{ 
+    position: absolute;
+    width: 100px; height: 100px; border:solid red 2px;
+    border-radius: 50%;
+    animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+
+  #circle2{ 
+    position: absolute;
+
+    width: 100px; height: 100px; border:solid red 2px;
+    border-radius: 50%;
+    animation: rotation2 3s infinite linear;
+}
+@keyframes rotation2 {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(359deg);
+    }
+  }
+  #circley{ 
+    position: absolute;
+    transform:matrix(1.00,0.50,0.50,1.00,0,4);
+        width: 90px; height: 90px; border:solid red 2px;
+    border-radius: 50%;
+    animation: rotation4 3s infinite linear;
+}
+@keyframes rotation4 {
+  from {
+    transform:matrix(0.91,0.65,0.34,1.07,0,4);
+  }
+  to {
+    transform:matrix(-0.96,-0.57,-0.43,-1.03,0,4);
+  }
+}
+#circley2{ 
+  position: absolute;
+  /* transform:matrix(1.00,0.00,-0.30,1.00,1,4); */
+    width: 100px; height: 100px; border:solid red 2px;
+  border-radius: 50%;
+  animation: rotation3 4s infinite linear;
+}
+@keyframes rotation3 {
+  0% {
+    transform:matrix(1.00,0.00,0.50,1.00,1,4);
+  }
+  25% {
+    transform:matrix(0.00,1.00,-1.00,0.50,1,4);
+  }
+  50% {
+    transform:matrix(-1.00,0.00,-0.50,-1.00,1,4);
+  }
+  75% {
+    transform:matrix(-0.00,-1.00,1.00,-0.50,1,4);
+  }
+  100% {
+    transform:matrix(1.00,-0.02,0.52,0.99,1,4);
+  }
+}
+
+#circley4{ 
+  position: absolute;
+  transform:matrix(1.00,0.50,0.50,1.00,0,4);
+      width: 90px; height: 90px; border:solid red 2px;
+  border-radius: 50%;
+  animation: rotation5 3s infinite linear;
+}
+@keyframes rotation5 {
+from {
+  transform:matrix(-0.96,-0.57,-0.43,-1.03,0,4);
+  
+}
+to {
+  transform:matrix(0.91,0.65,0.34,1.07,0,4);
+}
+}
