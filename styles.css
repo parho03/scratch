@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(113, 225, 188);
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    animation: rotation 3s infinite linear;
+    margin-top: 100px;
+
+  }
+ .trioutside{
+     position: absolute;
+     width: 0;
+     height: 0;
+     border-top: 100px solid blue;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     margin-top: 300px;
+         animation: rotation 3s infinite linear;
+
+ }
+ .trinside{
+     position: absolute;
+     top: -90;
+     left: -35;
+     width: 0;
+     height: 0;
+     border-top: 70px solid rgb(253, 253, 255);
+     border-left: 35px solid transparent;
+     border-right:35px solid transparent;
+         /* animation: rotation 3s infinite linear; */
+
+ }  
+
+ @keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
